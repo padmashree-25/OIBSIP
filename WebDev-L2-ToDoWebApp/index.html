@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow - To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>TaskFlow</h1>
+            <p>Organize your tasks. Stay productive.</p>
+        </header>
+
+        <section class="task-input">
+            <input type="text" id="taskInput" placeholder="Enter a new task...">
+            <button id="addTaskBtn">Add Task</button>
+        </section>
+
+        <main class="task-container">
+
+            <section class="task-section pending-section">
+                <div class="section-header">
+                    <h2>Pending Tasks</h2>
+                    <span id="pendingCount">0 pending</span>
+                </div>
+
+                <div id="pendingList" class="task-list">
+                    <p class="empty-message">No pending tasks. You're all caught up! 🎉</p>
+                </div>
+            </section>
+
+            <section class="task-section completed-section">
+                <div class="section-header">
+                    <h2>Completed Tasks</h2>
+                    <span id="completedCount">0 completed</span>
+                </div>
+
+                <div id="completedList" class="task-list">
+                    <p class="empty-message">No completed tasks yet.</p>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>TaskFlow • Stay organized, stay productive</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
